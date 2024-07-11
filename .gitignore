@@ -22,4 +22,5 @@ afl-llvm-rt.o
 
 *.o
 
-targets/
+.travis/
+.vscode/
