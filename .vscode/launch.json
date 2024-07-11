@@ -1,0 +1,118 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug AFL (bug)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/afl-fuzz",
+            "args": ["-m", "none", "-i", "targets/bug_test/input_dir", "-o", "targets/bug_test/output_dir", "--", "./targets/bug_test/bug", "@@"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "Debug AFL (libpng)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/afl-fuzz",
+            "args": ["-m", "none", "-i", "/home/silvan/fuzzing-testbench/libpng/corpus/libpng_read_fuzzer", "-o", "/home/silvan/fuzzing-testbench/libpng/test_driver/findings", "--", "/home/silvan/fuzzing-testbench/libpng/test_driver/libpng_read_fuzzer", "@@"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "Debug AFL (cjson)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/afl-fuzz",
+            "args": ["-m", "none", "-i", "/home/silvan/fuzzing-testbench/libpng/corpus/libpng_read_fuzzer/", "-o", "targets/cjson_test/output_dir", "--", "./targets/cjson_test/xml_parser", "@@"], 
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "Debug AFL (libtiff)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/afl-fuzz",
+            "args": ["-m", "none", "-i", "/home/silvan/fuzzing-testbench/libtiff/corpus/tiff_read_rgba_fuzzer", "-o", "/home/silvan/fuzzing-testbench/libtiff", "--", "/home/silvan/fuzzing-testbench/libtiff/test_driver/tiff_read_rgba_fuzzer", "@@"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "Debug AFL (mjs)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/afl-fuzz",
+            "args": ["-m", "none", "-i", "/home/silvan/mjs-with-bugs/input_dir", "-o", "/home/silvan/mjs-with-bugs/findings", "--", "/home/silvan/mjs-with-bugs/mjs-bin", "@@"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "Debug AFL Clang Fast++",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/afl-clang-fast++",
+            "args": ["-o", "transformed", "main.cpp"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+        }
+    ]
+}

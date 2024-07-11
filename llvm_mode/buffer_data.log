@@ -1,0 +1,20 @@
+buffer_id: 1, buffer_address: 0x403004, buffer_size: 6, accessed_byte: 0
+buffer_id: 2, buffer_address: 0x40300a, buffer_size: 26, accessed_byte: 0
+buffer_id: 3, buffer_address: 0x403024, buffer_size: 31, accessed_byte: 0
+buffer_id: 4, buffer_address: 0x7ffca2809318, buffer_size: 8, accessed_byte: 0
+--------------------------------------------
+buffer_id: 4, buffer_address: 0x7ffe0d87dd48, buffer_size: 8, accessed_byte: 0
+buffer_id: 1, buffer_address: 0x403004, buffer_size: 6, accessed_byte: 0
+buffer_id: 2, buffer_address: 0x40300a, buffer_size: 26, accessed_byte: 0
+buffer_id: 3, buffer_address: 0x403024, buffer_size: 31, accessed_byte: 0
+--------------------------------------------
+buffer_id: 4, buffer_address: 0x7fff66991578, buffer_size: 8, accessed_byte: 0
+buffer_id: 1, buffer_address: 0x403004, buffer_size: 6, accessed_byte: 0
+buffer_id: 2, buffer_address: 0x40300a, buffer_size: 26, accessed_byte: 0
+buffer_id: 3, buffer_address: 0x403024, buffer_size: 31, accessed_byte: 0
+--------------------------------------------
+buffer_id: 1, buffer_address: 0x403004, buffer_size: 6, accessed_byte: 0
+buffer_id: 2, buffer_address: 0x40300a, buffer_size: 26, accessed_byte: 0
+buffer_id: 3, buffer_address: 0x403024, buffer_size: 31, accessed_byte: 0
+buffer_id: 4, buffer_address: 0x7ffe110c4cc8, buffer_size: 8, accessed_byte: 0
+--------------------------------------------
