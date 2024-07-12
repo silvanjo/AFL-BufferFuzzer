@@ -47,7 +47,7 @@ Um das Skript auszuführen werden sudo Rechte benötigt, da durch das Skript Sys
 Bevor ein Program mit dem AFL-BufferFuzzer getestet werden kann muss das System under Test mit dem afl clang-Wrapper kompiliert werden. Dabei wird afl-clang-fast für C und afl-clang-fast++ für C++ Programme verwendet. Ein Beispielhafter Aufruf sieht wie folgt aus:
 
 ```bash
-afl-clang-fast main.c -o program 
+./afl-clang-fast main.c -o program 
 ```
 
 Beim Aufruf des Compilers wird ausgegeben wie viele Buffer im Programm gefunden wurden, und um welche Art von Buffer es sich dabei handelt.
@@ -57,7 +57,7 @@ Wenn ein Programm mit AFL-BufferFuzzer getestet werden soll, werden beispielhaft
 Jetzt kann mit dem Fuzzing begonnen werden. Dies geschieht mit dem Programm afl-fuzz. Ein Aufruf des Programm könnte wie folgt aussehen:
 
 ```bash
-afl-fuzz -m none -i input_dir -o output_dir -- ./program @@
+./afl-fuzz -m none -i input_dir -o output_dir -- ./program @@
 ```
 Die Parameter haben dabei die folgende Bedeutung:
 - `-m none`: Deaktiviert die Speicherbegrenzung für den Fuzzing-Prozess.
@@ -73,8 +73,8 @@ In dem Verzeichnis target/ befindet sich ein Fehlerhaftes Programm, dass als Bei
 
 ```bash
 sudo sh setup.sh
-afl-clang-fast ./target/main.c -o ./target/program
-afl-fuzz -m none -i ./target/input_dir -o ./output_dir -- ./target/program @@
+./afl-clang-fast ./target/main.c -o ./target/program
+./afl-fuzz -m none -i ./target/input_dir -o ./output_dir -- ./target/program @@
 ```
 
 ## Welche Programmteile wurden im Vergleich zu AFL modifiziert?
