@@ -25,7 +25,7 @@ sudo ln -s /usr/bin/llvm-config-12 /usr/bin/llvm-config
 Außerdem werden die Build-Essential-Tools benötigt, falls diese nicht bereits installiert sind. Diese können mit folgendem Befehl installiert werden:
 
 ```bash
-sudo apt build-essentials
+sudo apt install build-essential
 ```
 
 Anschließend kann das Projekt gebaut werden. Dazu muss im Hauptverzeichnis des Projekts folgende Befehle ausgeführt werden:
