@@ -5708,11 +5708,6 @@ static u8 could_be_interest(u32 old_val, u32 new_val, u8 blen, u8 check_le) {
   /* This variable determines how long air time the current seed gets (calulated by calculate_score_buffer_map) */
   u64 havoc_execs;
 
-  /* Skip redundant queue entries */
-  if (queue_cur->fs_redundant) {
-    return 1;
-  }
-
 #ifdef IGNORE_FINDS
 
   /* In IGNORE_FINDS mode, skip any entries that weren't in the
