@@ -76,3 +76,23 @@ sudo sh setup.sh
 afl-clang-fast ./target/main.c -o ./target/program
 afl-fuzz -m none -i ./target/input_dir -o ./output_dir -- ./target/program @@
 ```
+
+## Welche Programmteile wurden im Vergleich zu AFL modifiziert?
+
+Der Quellcode für die Intrumentierung für das Erkennen von Speicherzugriffen befindet sich in den folgeenden Dateien:
+
+- `BufferMonitor.cpp`
+- `BufferMonitorLib.c`
+- `HashMap.h` und `HashMap.c`
+
+Damit der Pass verwendet wird wurden entsprechende Anpassungen in der Datei `afl-clang-fast.c` vorgenommen.
+
+Für die Implemenetation der Fuzzing-Logik, welche die Daten über Speicherzugriffe verwendet wurde die Datei  `afl-fuzz` angepasst. Die wichtigsten Funktion die angepasst oder neu hinzugefügt wurden sind dabei
+
+- `calculate_score_buffer_map`
+- `calculate_favored_entries`
+- `update_buffer_distances`
+- `save_if_interesting_custom`
+
+
+
