@@ -1,4 +1,4 @@
-Dieses Projekt wurde zuletzt geändert am: ...
+Dieses Projekt wurde zuletzt geändert am: 12.07.2024
 
 ## Überblick
 
