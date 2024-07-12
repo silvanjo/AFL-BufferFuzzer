@@ -9,7 +9,7 @@ Der AFL-BufferFuzzer ist ein auf AFL basierender Fuzzer, der speziell für die A
 Um den Fuzzer zu verwenden wird die clang und llvm Version 12 benötigt. Diese kann auf Ubuntu 22 LTS Systemen und frühere Ubuntu Versionen über den apt Paketmanager installiert werden:
 
 ```bash
-sudo apt install clang-12 llvm-12 llvm-config-12
+sudo apt install clang-12 llvm-12
 ```
 
 Es ist wichtig, dass exakt diese Version verwendet wird. Wenn beim Bauen des Projekts etwas fehlschlägt, liegt es höchstwahrscheinlich daran, dass eine andere LLVM-Version verwendet wurde.
