@@ -74,7 +74,7 @@ In dem Verzeichnis target/ befindet sich ein Fehlerhaftes Programm, dass als Bei
 ```bash
 sudo sh setup.sh
 ./afl-clang-fast ./target/main.c -o ./target/program
-./afl-fuzz -m none -x /target/dict.txt -i ./target/input_dir -o ./target/output_dir -- ./target/program @@
+./afl-fuzz -m none -x ./target/dict.txt -i ./target/input_dir -o ./target/output_dir -- ./target/program @@
 ```
 
 ## Welche Programmteile wurden im Vergleich zu AFL modifiziert?
