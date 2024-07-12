@@ -18,7 +18,7 @@ Nun müssen Symbolische Links auf die zuvor installierten LLVM-Tools erstellt we
 
 ```bash
 sudo ln -s /usr/bin/clang-12 /usr/bin/clang
-sudo ln -s /usr/bin/clang++12 /usr/bin/clang++
+sudo ln -s /usr/bin/clang++-12 /usr/bin/clang++
 sudo ln -s /usr/bin/llvm-config-12 /usr/bin/llvm-config
 ```
 
